@@ -1,0 +1,117 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #e9edf1;
+  font-family: "Nunito", sans-serif;
+  margin: 0;
+}
+
+header {
+  background-color: #dbe1e8;
+  padding: 2.5em;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+a.logo {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #0460bc;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: 3.6em;
+  list-style-type: none;
+  align-items: flex-end;
+}
+
+ul li a {
+  color: black;
+  font-size: 1.8rem;
+}
+
+ul li a.active {
+  font-weight: bold;
+}
+
+a.cart {
+  background-color: #c3ccd7;
+  display: flex;
+  border-radius: 0.4em;
+  padding: 1em;
+  gap: 1em;
+  align-items: center;
+}
+
+a.cart p {
+  margin: 0;
+  font-size: 1.8rem;
+  color: black;
+}
+
+nav {
+  position: fixed;
+  width: 33%;
+  height: 100vh;
+  top: 0;
+  right: -100%;
+  background-color: white;
+  padding: 4.6em;
+  transform: right 0.5s ease-in-out;
+}
+
+.close {
+  cursor: pointer;
+  width: 30px;
+  display: block;
+  margin-left: auto;
+  margin-bottom: 6.6em;
+}
+
+.mobile {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+}
+
+.menu {
+  cursor: pointer;
+  width: 30px;
+}
+
+.open {
+  right: 0;
+}
+
+@media only screen and (min-width: 600px) {
+  .menu,
+  .close {
+    display: none;
+  }
+
+  nav {
+    position: unset;
+    height: auto;
+    width: auto;
+    background: none;
+    padding: 0;
+  }
+
+  ul {
+    flex-direction: row;
+  }
+}
